@@ -1,6 +1,6 @@
 # Microrobot-Leg-Control
 
-![alt text](https://github.com/Ali-7800/Microrobot-Leg-Control/img/model.PNG "Model")
+![alt text](https://github.com/Ali-7800/Microrobot-Leg-Control/img/model.png "Model")
 
 
 ## Main Functions
