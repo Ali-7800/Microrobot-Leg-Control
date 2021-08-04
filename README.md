@@ -1,7 +1,8 @@
 # Microrobot-Leg-Control
 
-![alt text](https://github.com/Ali-7800/Microrobot-Leg-Control/blob/main/img/model.png "Model")
-
+<p align="center">
+  <img src="https://github.com/Ali-7800/Microrobot-Leg-Control/blob/main/img/model.png" />
+</p>
 
 ## Main Functions
 ### Forward Kinematic Function ```fcn_FK(dV1,dV2)```
