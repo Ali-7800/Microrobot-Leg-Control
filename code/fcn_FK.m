@@ -26,13 +26,13 @@ function tip_displacement = fcn_FK(dv1,dv2)
     %beam A1B1
     mu1 = sqrt(P1/(E*I)); 
     beta1 = -alph;
-    c11 = (csc(l*mu1/2))^2*((-l*beta1+gamma1)*mu1-(gamma1*mu1*cos(l*mu1))+beta1*sin(mu1*l))/(2*mu1*(-2+l*mu1*cot(l*mu1/2)));
+    c11 = (gamma1*mu1 + beta1*sin(l*mu1) - beta1*l*mu1 - gamma1*mu1*cos(l*mu1))/(mu1*(2*cos(l*mu1) + l*mu1*sin(l*mu1) - 2));
     c12 = (beta1-beta1*cos(l*mu1)-gamma1*mu1*sin(l*mu1))/(mu1*(-2+2*cos(l*mu1)+l*mu1*sin(l*mu1)));
     
     %beam A2B2
     mu2 = sqrt(P2/(E*I)); 
     beta2 = alph;
-    c21 = (csc(l*mu2/2))^2*((-l*beta2+gamma2)*mu2-(gamma2*mu2*cos(l*mu2))+beta2*sin(mu2*l))/(2*mu2*(-2+l*mu2*cot(l*mu2/2)));
+    c21 = (gamma2*mu2 + beta2*sin(l*mu2) - beta2*l*mu2 - gamma2*mu2*cos(l*mu2))/(mu2*(2*cos(l*mu2) + l*mu2*sin(l*mu2) - 2));
     c22 = (beta2-beta2*cos(l*mu2)-gamma2*mu2*sin(l*mu2))/(mu2*(-2+2*cos(l*mu2)+l*mu2*sin(l*mu2)));    
     
     %find moments
@@ -120,13 +120,13 @@ function tip_displacement = fcn_FK(dv1,dv2)
         %beam A1B1
         mu1 = sqrt(P1/(E*I)); 
         beta1 = -alph;
-        c11 = (csc(l*mu1/2))^2*((-l*beta1+gamma1)*mu1-(gamma1*mu1*cos(l*mu1))+beta1*sin(mu1*l))/(2*mu1*(-2+l*mu1*cot(l*mu1/2)));
+        c11 = (gamma1*mu1 + beta1*sin(l*mu1) - beta1*l*mu1 - gamma1*mu1*cos(l*mu1))/(mu1*(2*cos(l*mu1) + l*mu1*sin(l*mu1) - 2));
         c12 = (beta1-beta1*cos(l*mu1)-gamma1*mu1*sin(l*mu1))/(mu1*(-2+2*cos(l*mu1)+l*mu1*sin(l*mu1)));
 
         %beam A2B2
         mu2 = sqrt(P2/(E*I)); 
         beta2 = alph;
-        c21 = (csc(l*mu2/2))^2*((-l*beta2+gamma2)*mu2-(gamma2*mu2*cos(l*mu2))+beta2*sin(mu2*l))/(2*mu2*(-2+l*mu2*cot(l*mu2/2)));
+        c21 = (gamma2*mu2 + beta2*sin(l*mu2) - beta2*l*mu2 - gamma2*mu2*cos(l*mu2))/(mu2*(2*cos(l*mu2) + l*mu2*sin(l*mu2) - 2));
         c22 = (beta2-beta2*cos(l*mu2)-gamma2*mu2*sin(l*mu2))/(mu2*(-2+2*cos(l*mu2)+l*mu2*sin(l*mu2)));    
 
         %find moments
