@@ -39,3 +39,18 @@ In the third section of this script you can plot a trajectory onto the workspace
 This calculates the voltages needed to make the leg tip move in a trajectory.
 To calculate the voltages just run the first section to create matrix to store the voltages and then add a section following the format given in the script using the parametric equations x and y for your trajectory.
 
+## Side Functions
+
+### Angle Range Between Contacts Function ```fcn_contacts(dx_c,dy_c)```
+Outputs the range of possible alpha values [alpha_min,alpha_max] between the contacts for a given (dx_c,dy_c), used by ```fcn_FK``` and ```fcn_IK``` to determine when to use the contact model.
+
+### Contact Check ```fcn_contactCheck(dx_c,dy_c)```
+Checks if the point (dx_c,dy_c) makes the leg touch any of the contact points.
+
+### La(N2)
+Calculates $\Lambd_{a}$ given $N^{2}$
+
+
+
+
+
