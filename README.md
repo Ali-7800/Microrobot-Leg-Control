@@ -48,7 +48,7 @@ Outputs the range of possible alpha values [alpha_min,alpha_max] between the con
 Checks if the point (dx_c,dy_c) makes the leg touch any of the contact points.
 
 ### La(N2)
-Calculates $&Lambda_{a}$ given $N^{2}$
+Calculates Λ<sub>a</sub> given N<sup>2</sup>
 
 
 
