@@ -47,10 +47,10 @@ Outputs the range of possible alpha values [alpha_min,alpha_max] between the con
 ### Contact Check ```fcn_contactCheck(dx_c,dy_c)```
 Checks if the point (dx_c,dy_c) makes the leg touch any of the contact points.
 
-### La(N2)
+### ```La(N2)```
 Calculates Λ<sub>a</sub> given a N<sup>2</sup>
 
-### Le(N2)
+### ```Le(N2)```
 Calculates Λ<sub>e</sub> given a N<sup>2</sup>
 
 
