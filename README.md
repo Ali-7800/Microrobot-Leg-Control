@@ -33,7 +33,7 @@ This script plots the workspace and shows it just like the image below
 
 Run the section corresponding to section you ran in ```workspace_gen.m``` to plot the three workspaces.
 
-In the third section of this script you plot a trajectory onto the workspaces to see if it is within them by changing the parametric equations x and y to the desired trajectory.
+In the third section of this script you can plot a trajectory onto the workspaces to see if it is within them by changing the parametric equations x and y to the desired trajectory.
 
 ### Trajectory generation ```trajectory_gen.m```
 This calculates the voltages needed to make the leg tip move in a trajectory.
